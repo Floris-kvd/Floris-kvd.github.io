@@ -9,13 +9,13 @@ function toggleDarkMode() {
     localStorage.setItem('darkMode', 'true');
   } else {
     body.classList.remove('dark-mode');
-    localStorage.removeItem('darkMode');
+    localStorage.setItem('darkMode', 'false');
   }
 }
 
 // Function to apply dark mode on page load
 function applyDarkModePreference() {
-  if (isDarkMode) {
+  if (isDarkMode == "true" || isDarkMode == null) {
     toggleCheckbox.checked = true;
     body.classList.add('dark-mode');
   }
