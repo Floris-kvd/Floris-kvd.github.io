@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Badduck's Website</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>badduck.github.io</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1>Badduck's Website</h1>
-  <div class="button-container">
-    <button id="button1" class="button">Button 1</button>
-    <button id="button2" class="button">Button 2</button>
-    <button id="button3" class="button">Button 3</button>
-  </div>
+	<div class="container">
+		<div class="pattern"></div>
+		<div class="dark-mode-toggle">
+			<input type="checkbox" id="dark-mode-checkbox" class="toggle-checkbox">
+			<label for="dark-mode-checkbox" class="toggle-label">
+			<i class="fas fa-sun"></i>
+			<i class="fas fa-moon"></i>
+			</label>
+		</div>
+		<div class="centercontainer">
+			<header>
+			<h1>badduck.github.io</h1>
+			</header>
+			
+			<main>
+			<div class="button-container">
+				<button class="button">Button 1</button>
+				<button class="button">Button 2</button>
+				<button class="button">Button 3</button>
+			</div>
+			</main>
+			
+			<script src="index.js"></script>
+		</div>
+	</div>
 </body>
 </html>
