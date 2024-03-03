@@ -1,5 +1,6 @@
 const toggleCheckbox = document.querySelector('.toggle-checkbox');
 const body = document.querySelector('body');
+const love_together_button = document.querySelector('#love-together-button')
 const isDarkMode = localStorage.getItem('darkMode');
 
 // Function to toggle dark mode
@@ -20,6 +21,12 @@ function applyDarkModePreference() {
     body.classList.add('dark-mode');
   }
 }
+
+// Event listener for love-together-button
+love_together_button.addEventListener("click", function () {
+  // Redirect to the test.html page
+  window.location.href = "love-together.html";
+});
 
 // Event listener for toggle change
 toggleCheckbox.addEventListener('change', toggleDarkMode);
